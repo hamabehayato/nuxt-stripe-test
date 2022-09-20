@@ -9,6 +9,7 @@
 import axios from 'axios'
 export default {
  asyncData() {
+  console.log("NODE_ENV", process.env.NODE_ENV);
   const baseUrl =
    process.env.NODE_ENV !== 'production'
     ? 'http://localhost:9000'
